@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useContext} from "react";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -10,7 +10,9 @@ import {
 // import {} from "@fortawesome/free-brands-svg-icons";z
 import user from "./../../img/user.jpg";
 import { FormControl, Nav, Navbar, NavDropdown, Form } from "react-bootstrap";
+import { OpenContext } from "../Context/OpenContext";
 const Header = () => {
+    const open = useContext(OpenContext);
     return (
         <>
             <Navbar
@@ -25,7 +27,11 @@ const Header = () => {
                         </i>
                     </h2>
                 </Link>
-                <Link to="#" className="sidebar-toggler flex-shrink-0">
+                <Link
+                    to="#"
+                    className="sidebar-toggler flex-shrink-0"
+                    onClick={open.toggleOpen}
+                >
                     <i>
                         <FontAwesomeIcon icon={faBars} />
                     </i>
