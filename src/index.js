@@ -7,15 +7,17 @@ import { LayoutComponent } from "./components/layout";
 // import "bootstrap/dist/js/bootstrap.bundle.min.js";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import 'react-calendar/dist/Calendar.css';
+import "react-calendar/dist/Calendar.css";
 import "./scss/bootstrap.scss";
-
 import "./scss/style.scss";
+import { OpenProvider } from "./components/Context/OpenContext";
 ReactDOM.render(
     <React.StrictMode>
-        <BrowserRouter>
-            <LayoutComponent />
-        </BrowserRouter>
+        <OpenProvider>
+            <BrowserRouter>
+                <LayoutComponent />
+            </BrowserRouter>
+        </OpenProvider>
     </React.StrictMode>,
     document.getElementById("root")
 );
