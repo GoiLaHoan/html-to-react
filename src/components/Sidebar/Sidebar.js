@@ -9,6 +9,10 @@ import {
     faLaptop,
     faTachometerAlt,
     faFileAlt,
+    faTh,
+    faKeyboard,
+    faTable,
+    faChartBar,
 } from "@fortawesome/free-solid-svg-icons";
 const Sidebar = () => {
     const [show, setShow] = useState(false);
@@ -118,21 +122,30 @@ const Sidebar = () => {
                         <Nav.Item>
                             <Link to="/widgets" className={``}>
                                 <Nav.Link eventKey="link-1" href="widget">
-                                    <i className="fa fa-th me-2"></i>Widgets
+                                    <i className="me-2">
+                                        <FontAwesomeIcon icon={faTh} />
+                                    </i>
+                                    Widget
                                 </Nav.Link>
                             </Link>
                         </Nav.Item>
                         <Nav.Item>
                             <Link to="/form">
                                 <Nav.Link eventKey="link-2" href="form">
-                                    <i className="fa fa-keyboard me-2"></i>Forms
+                                    <i className="me-2">
+                                        <FontAwesomeIcon icon={faKeyboard} />
+                                    </i>
+                                    Form
                                 </Nav.Link>
                             </Link>
                         </Nav.Item>
                         <Nav.Item>
                             <Link to="/tables" className="">
                                 <Nav.Link eventKey="link-3" href="table">
-                                    <i className="fa fa-table me-2"></i>Tables
+                                    <i className="me-2">
+                                        <FontAwesomeIcon icon={faTable} />
+                                    </i>
+                                    Table
                                 </Nav.Link>
                             </Link>
                         </Nav.Item>
@@ -140,7 +153,9 @@ const Sidebar = () => {
                         <Nav.Item>
                             <Link to="/chart">
                                 <Nav.Link eventKey="link-4" href="/chart">
-                                    <i className="fa fa-chart-bar me-2"></i>
+                                    <i className="me-2">
+                                        <FontAwesomeIcon icon={faChartBar} />
+                                    </i>
                                     Charts
                                 </Nav.Link>
                             </Link>

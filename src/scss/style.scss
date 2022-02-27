@@ -125,7 +125,9 @@
     padding: 7px 20px;
     color: var(--dark);
     font-weight: 500;
+    border: 0px;
     border-left: 3px solid var(--light);
+    
     border-radius: 0 30px 30px 0;
     outline: none;
 }
@@ -134,7 +136,7 @@
 .sidebar .navbar .navbar-nav .nav-link.active {
     color: var(--primary);
     background: #ffffff;
-    // border-color: var(--primary);
+    border-color: var(--primary);
 }
 
 .sidebar .navbar .navbar-nav .nav-link i {
