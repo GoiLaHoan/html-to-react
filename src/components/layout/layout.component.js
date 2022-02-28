@@ -21,7 +21,7 @@ const LayoutCompnent = () => {
         if (loading) {
             setTimeout(() => {
                 setLoading(false);
-            }, 500);
+            }, 697);
         }
     }, [loading]);
 
